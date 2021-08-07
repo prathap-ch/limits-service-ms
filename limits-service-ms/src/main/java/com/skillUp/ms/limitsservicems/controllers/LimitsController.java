@@ -16,4 +16,9 @@ public class LimitsController {
 	public Limits retrieveLimits() {
 		return new Limits(config.getMin(), config.getMax());
 	}
+	
+	@GetMapping("/test")
+	public String connectTest() {
+		return "****** SUCCESSFULLY DEPLOYED TO DOCKER CONTAINER ********";
+	}
 }
